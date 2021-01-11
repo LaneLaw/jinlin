@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Jinlin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">#00000000</item>-->
+<!--        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>-->
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

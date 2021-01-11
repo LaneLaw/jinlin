@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Jinlin</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Login</string>
+
+</resources>
