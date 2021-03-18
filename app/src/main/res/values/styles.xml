@@ -5,11 +5,11 @@
     </style>
 
     <style name="PurpleButtonStyle" parent="Widget.AppCompat.Button.Borderless">
-        <item name="colorButtonNormal">@color/purple</item>
-        <item name="android:background">@color/purple</item>
+        <item name="colorButtonNormal">@color/grey</item>
+        <item name="android:background">@color/grey</item>
     </style>
     <style name="ButtonStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorAccent">@color/purple</item>
+        <item name="colorAccent">@color/grey</item>
     </style>
 
 </resources>

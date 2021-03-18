@@ -55,6 +55,8 @@ public class MyGetJob extends AsyncTask<String,Void,String>{
             //设置读取超时时间
             con.setReadTimeout(5 * 1000);
 
+
+
             if (con.getResponseCode() == 200) {
                 // 读取网页内容（字符串流）
                 is = con.getInputStream();
@@ -102,7 +104,7 @@ public class MyGetJob extends AsyncTask<String,Void,String>{
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
         if(s.equals("")) {
-            Toast.makeText(context, s, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "", Toast.LENGTH_LONG).show();
         }else {
             msg.tranStr(s);
         }

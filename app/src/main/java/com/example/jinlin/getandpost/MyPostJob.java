@@ -49,7 +49,9 @@ public class MyPostJob extends AsyncTask<String, Void, String> {
             con.setReadTimeout(5 * 1000);
             con.setRequestMethod("POST");
             con.setRequestProperty("Content-Type", "application/json");
-            String body = "{\"username\": \"" + parms[1] + "\", \"password\": \"" + parms[2] + "\"}";
+
+
+            String body = parms[1] + parms[2];
             con.setDoInput(true);
             con.setDoOutput(true);
             DataOutputStream wr = new DataOutputStream(con.getOutputStream());
@@ -87,7 +89,7 @@ public class MyPostJob extends AsyncTask<String, Void, String> {
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
         if(s.equals("")) {
-            Toast.makeText(context, s, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "", Toast.LENGTH_LONG).show();
         }else {
             msg.tranStr(s);
         }

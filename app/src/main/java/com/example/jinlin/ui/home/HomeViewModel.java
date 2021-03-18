@@ -11,12 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeViewModel extends ViewModel implements Message {
-    private MutableLiveData<String> Text;
     private MutableLiveData<List<Merchant>> allMerchant;
     Gson gson;
 
     public HomeViewModel(){
-        Text = new MutableLiveData<>();
         allMerchant = new MutableLiveData<>();
         gson = new Gson();
     }
@@ -25,8 +23,7 @@ public class HomeViewModel extends ViewModel implements Message {
         return allMerchant;
     }
 
-    public void setAllMerchant(){
-    }
+
 
     public void tranStr(String s){
         Merchant [] mer = gson.fromJson(s, Merchant[].class);
